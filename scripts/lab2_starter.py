@@ -27,16 +27,7 @@ class Cliff:
         distance = 0.0  # TODO: fit function mapping raw to distance
 
         ######### Your code starts here #########
-        # calculation from raw sensor value to distance (Step 3.3 of lab)
-        # Power Law Regression where relation is y=ax^b
-        # if raw > 0:  # Avoid division by zero
-        #     a = 0  # Regression coefficient
-        #     b = 0  # Regression exponent
-        #     distance = a * (raw ** b)
-        # else:
-        #     distance = 0.0
-
-        # 
+        # please view plot.py for power law regression and lab2q3pt2.py for stats calculation
         ######### Your code ends here #########
 
         print(f"raw: {raw}\tdistance: {distance}")
