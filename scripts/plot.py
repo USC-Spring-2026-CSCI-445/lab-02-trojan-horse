@@ -14,13 +14,27 @@ from scipy.optimize import curve_fit
 
 # Example data from the lab (cardboard box measurements)
 # Format: [ground_truth_distance (m), mean_raw_sensor_value]
-calibration_data = [
-    [0.1, 670.4],
-    [0.2, 360.4],
-    [0.3, 242.6],
-    [0.5, 143.8],
-    [1.0, 79.8],
+calibration_data_wood = [
+    [0.1, 647.2],
+    [0.2, 365.0],
+    [0.3, 293.0],
+    [0.4, 300.0],
+    [0.5, 252.4],
+    [0.6, 294.4],
+    [0.7, 297.6],
 ]
+
+calibration_data_foam = [
+    [0.1, 706.8],
+    [0.2, 387.0],
+    [0.3, 273.2],
+    [0.4, 215.4],
+    [0.5, 207.4],
+    [0.6, 201.4],
+    [0.7, 208.0],
+]
+
+calibration_data = calibration_data_wood # change this to foam if you want to view foam
 
 # Separate into arrays
 distances = np.array([point[0] for point in calibration_data])  # Ground truth (meters)
